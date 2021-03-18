@@ -11,6 +11,15 @@ function mouse_Down(e) {
     width_line=document.getElementById("Width_line_input").value;
     mouse_event="Mousedown";
 }
+canvas.addEventListener("mouseup",mouse_Up);
+function mouse_Up(){
+    mouse_event="mouseup";
+}
+
+canvas.addEventListener("mouseleave",mouse_Leave);
+function mouse_Leave(){
+    mouse_Up="mouseleave";
+}
 
 canvas.addEventListener("mousemove",Mouse_move);
 
